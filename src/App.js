@@ -14,22 +14,14 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      {/* <StyledHeader className="styled-header">
-        <StyledLogo className="logo-container">
-          <span>PB2</span>
-        </StyledLogo>
-      </StyledHeader> */}
-
       <Router>
         <StyledApp className="styled-app">
           <Sidebar />
 
-          <StyledContainer maxWidth="1250px" className="styled-container">
-            <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/bio" exact component={Bio} />
-            </Switch>
-          </StyledContainer>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/bio" exact component={Bio} />
+          </Switch>
         </StyledApp>
       </Router>
     </div>

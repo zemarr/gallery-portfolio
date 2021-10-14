@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledApp = styled.div`
   position: relative;
   display: flex;
-  max-height: 100vh;
+  /* max-height: 100vh; */
 `;
 
 export const StyledContainer = styled.div`
@@ -43,12 +43,11 @@ export const StyledLogo = styled.div`
 `;
 
 export const StyledHome = styled.section`
+  height: 100vh;
   overflow-y: auto;
-  scroll-behavior: smooth;
-  /* padding: 0 50px; */
-  height: inherit;
+  /* scroll-behavior: smooth; */
 
-  @media screen and (max-width: 1200px) {
+  /* @media screen and (max-width: 1200px) {
     padding: 0 30px;
-  }
+  } */
 `;

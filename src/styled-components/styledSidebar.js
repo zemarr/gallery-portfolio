@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const StyledSidebar = styled.div`
-    position: fixed;
+    display: flex;
+    flex-direction: column;
     background-color: transparent;
     height: inherit;
     min-width: 260px;
-    padding: 50px 0 0 50px;
-    margin-right: 20px;
-
-    
+    margin-left: 50px;
+    padding-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
     .navigation {
         margin: 0;
