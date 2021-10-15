@@ -11,3 +11,9 @@
   height: 100vh;
   overflow: hidden;
 }
+
+.campmodal.open {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}

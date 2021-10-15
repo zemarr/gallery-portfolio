@@ -9,6 +9,9 @@ import img7 from '../img/pexels-misha-voguel-7536224.jpg';
 import img8 from '../img/pexels-sonya-livshits-9821324.jpg';
 import img9 from '../img/pexels-lisa-9720777.jpg';
 import { StyledGallery } from '../styled-components/StyledGallery';
+import { useState } from 'react';
+import { StyledModal } from '../styled-components/modal';
+import { Close } from '@material-ui/icons';
 
 const data = [
     {
@@ -50,17 +53,32 @@ const data = [
 ]
 
 const Gallery = () => {
+    const [modal, setModal] = useState(false);
+    const [tempImgSrc, setTempImgSrc] = useState('');
+
+    const getImg = (imgSrc) => {
+        // console.log(imgSrc);
+        setTempImgSrc(imgSrc);
+        setModal(true);
+    }
+
     return (
+        <>
+        <StyledModal className={modal ? "campmodal open" : "campmodal"}>
+            <Close style={{color: "black", height: "40px", width: "40px", position: "absolute", top: "20px", right: "20px"}} onClick={() => setModal(false)} />
+            <img src={tempImgSrc} alt="" />
+        </StyledModal>
         <StyledGallery className="gallery-container">
             {console.log(data, 'dataaaa')}
             {data.map((item, index) => (
                 <>
-                    <div className="pics" key={index}>
+                    <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
                         <img src={item.imgSrc} alt="" style={{ width: "100%" }} />
                     </div>
                 </>
             ))}
         </StyledGallery>
+        </>
     )
 }
 

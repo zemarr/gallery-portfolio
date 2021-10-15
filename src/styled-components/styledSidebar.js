@@ -53,6 +53,10 @@ export const StyledSidebar = styled.div`
         li {
             margin-left: 30px;
             margin-bottom: 1rem;
+
+            @media screen and (max-width: 768px) {
+                margin-left: 0;
+            }
         }
 
         a {

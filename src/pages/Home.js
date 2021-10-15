@@ -1,6 +1,6 @@
 import React from "react";
 import Gallery from "../components/gallery";
-import { MainContent, StyledContainer, StyledHome } from "../styled-components/containers";
+import { MainContent } from "../styled-components/containers";
 
 const Home = () => {
   return (

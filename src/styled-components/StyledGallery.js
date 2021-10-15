@@ -7,16 +7,25 @@ export const StyledGallery = styled.div`
     -moz-column-width: 43%;
     padding: 0 12px;
 
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
+
     @media screen and (max-width: 425px) {
-        column-count: 1;
-        -moz-column-count: 1;
-        column-width: 100%;
-        -moz-column-width: 100%;
+        column-gap: 6px;
     }
 
     .pics {
         transition: all 350ms ease-in-out;
         cursor: pointer;
         margin-bottom: 12px;
+
+        :hover {
+            filter: opacity(.8);
+        }
+
+        @media screen and (max-width: 425px) {
+            margin-bottom: 6px;
+        }
     }
 `

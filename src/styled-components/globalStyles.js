@@ -45,7 +45,7 @@ export const StyledHeader = styled.header`
     align-items: center;
 
     @media screen and (max-width: 768px) {
-        padding: 0 20px;
+        padding: 0px;
     }
     @media screen and (max-width: 425px) {
         padding: 0 20px;
@@ -66,19 +66,19 @@ export const StyledHamburger = styled.div`
     }
 
     .menu-btn_hamburger {
-        width: 33px;
-        height: 3px;
+        width: 28px;
+        height: 2px;
         background-color: white;
         box-shadow: 0 2px rgba(255,101,47,.2);
         transition: all .5s ease-in-out;
-        opacity: ${({menuOpen}) => (menuOpen ? "0" : "1")}
+        opacity: ${({ menuOpen }) => (menuOpen ? "0" : "1")}
     }
 
     ::before, ::after {
             content: "";
             position: absolute;
-            width: 33px;
-            height: 3px;
+            width: 28px;
+            height: 2px;
             background-color: white;
             box-shadow: 0 2px rgba(255,101,47,.2);
             transition: all .5s ease-in-out;

@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Bio from "./pages/Bio";
 import Sidebar from "./components/sidebar";
 import {
-  MainContent,
   StyledApp, StyledLogo,
 } from "./styled-components/containers";
 import { useState } from "react";
@@ -32,7 +31,7 @@ function App() {
       <Router>
         <StyledApp className="styled-app container-fluid">
           <StyledHeader>
-            <StyledLogo className="logo-container">
+            <StyledLogo to="/" className="logo-container">
               <h4>Campbell</h4>
             </StyledLogo>
             <StyledHamburger onClick={handleSidebarActive} menuOpen={sidebarActive}>
