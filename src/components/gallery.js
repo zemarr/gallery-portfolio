@@ -2,12 +2,12 @@ import React from "react";
 import img1 from "../img/TONI&JAY-5881.jpg";
 import img2 from "../img/IMG_0092.jpg";
 import img3 from "../img/IMG_0042.JPG";
-import img4 from "../img/IMG_2500.JPG";
+import img4 from "../img/IMG_5416-opt.jpg";
 import img5 from "../img/IMG_2833_2.jpg";
-import img6 from "../img/IMG_3866.JPG";
-// import img7 from "../img/pexels-misha-voguel-7536224.jpg";
-// import img8 from "../img/pexels-sonya-livshits-9821324.jpg";
-// import img9 from "../img/pexels-lisa-9720777.jpg";
+import img6 from "../img/IMG_2500.JPG";
+import img7 from "../img/IMG_1023-opt.jpg";
+import img8 from "../img/IMG_2038-opt.jpg";
+import img9 from "../img/IMG_3866.JPG";
 import { StyledGallery } from "../styled-components/styledGallery";
 import { useState } from "react";
 import { StyledModal } from "../styled-components/modal";
@@ -37,6 +37,18 @@ const data = [
   {
     id: 6,
     imgSrc: img6,
+  },
+  {
+    id: 7,
+    imgSrc: img7,
+  },
+  {
+    id: 8,
+    imgSrc: img8,
+  },
+  {
+    id: 9,
+    imgSrc: img9,
   }
 ];
 
