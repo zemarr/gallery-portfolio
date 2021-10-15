@@ -5,7 +5,6 @@ import { MainContent } from "../styled-components/containers";
 const Home = () => {
   return (
     <>
-
       <MainContent scrollable>
         <div className="styled-home">
           <Gallery />

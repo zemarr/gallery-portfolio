@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { StyledLogo } from "../styled-components/containers";
 import { StyledSidebar } from "../styled-components/styledSidebar";
 
 const Sidebar = ({ sidebarActive, setSidebarActive }) => {
@@ -12,6 +13,9 @@ const Sidebar = ({ sidebarActive, setSidebarActive }) => {
   return (
     <>
       <StyledSidebar isOpen={!sidebarActive}>
+        <StyledLogo to="/" className="sidebar-logo-container">
+          <h4>Toni<span style={{fontSize: "30px", color: "brown"}}>.</span></h4>
+        </StyledLogo>
         <ul className="navigation">
           <li>
             <NavLink exact to="/" activeStyle={{ fontWeight: "500", color: "grey" }} onClick={closeSidebar}>Snapshot</NavLink>

@@ -19,7 +19,9 @@ export const StyledSidebar = styled.div`
       position: absolute;
       background-color: black;
       left: 0;
+      top: 68px;
       transform: ${({isOpen}) => (isOpen ? "translateY(-500px)" : "")};
+      transition: all .5s cubic-bezier(0.42, 0.01, 0, 1.04);
     }
 
     /* ::after {
@@ -45,6 +47,17 @@ export const StyledSidebar = styled.div`
         }
     }
 
+    .sidebar-logo-container {
+        padding: 0 50px;
+        margin-bottom: 50px;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+
     .navigation {
         margin: 0;
         padding: 0 20px;
@@ -54,9 +67,12 @@ export const StyledSidebar = styled.div`
             margin-left: 30px;
             margin-bottom: 1rem;
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 1024px) {
                 margin-left: 0;
             }
+            /* @media screen and (max-width: 768px) {
+                margin-left: 0;
+            } */
         }
 
         a {

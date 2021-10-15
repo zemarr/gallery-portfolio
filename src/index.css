@@ -16,4 +16,5 @@
     visibility: visible;
     opacity: 1;
     transform: scale(1);
+    transition: opacity 1s ease, transform .4s ease;
 }

@@ -16,7 +16,7 @@ export const StyledGallery = styled.div`
     }
 
     .pics {
-        transition: all 350ms ease-in-out;
+        transition: all 350ms cubic-bezier(0.42, 0.01, 0, 1.04);
         cursor: pointer;
         margin-bottom: 12px;
 

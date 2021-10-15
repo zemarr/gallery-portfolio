@@ -36,6 +36,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export const StyledHeader = styled.header`
+    background-color: var(--background-color);
     padding: 0 50px;
     width: 100%;
     height: 70px;
@@ -43,12 +44,26 @@ export const StyledHeader = styled.header`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    z-index: 888;
+    top: -70px;
+    opacity: 0;
+    visibility: hidden;
 
+    /* transform: translateY(-70px); */
+
+    @media screen and (max-width: 1024px) {
+        padding: 20px;
+    }
     @media screen and (max-width: 768px) {
+        position: relative;
+        top: 0;
+        opacity: 1;
+        visibility: visible;
         padding: 0px;
     }
     @media screen and (max-width: 425px) {
-        padding: 0 20px;
+        padding: 0;
     }
 
 `
@@ -70,7 +85,7 @@ export const StyledHamburger = styled.div`
         height: 2px;
         background-color: white;
         box-shadow: 0 2px rgba(255,101,47,.2);
-        transition: all .5s ease-in-out;
+        transition: all .5s cubic-bezier(0.42, 0.01, 0, 1.04);
         opacity: ${({ menuOpen }) => (menuOpen ? "0" : "1")}
     }
 
@@ -81,7 +96,7 @@ export const StyledHamburger = styled.div`
             height: 2px;
             background-color: white;
             box-shadow: 0 2px rgba(255,101,47,.2);
-            transition: all .5s ease-in-out;
+            transition: all .5s cubic-bezier(0.42, 0.01, 0, 1.04);
         }
 
         ::before {

@@ -52,8 +52,8 @@ export const StyledLogo = styled(Link)`
   }
 
   h4 {
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 900;
+    font-size: 20px !important;
   }
 `;
 
@@ -64,12 +64,13 @@ export const StyledHome = styled.section`
 `;
 
 export const MainContent = styled.div`
-  height: calc(100vh - 80px);
+  height: 100vh;
   max-width: 77%;
   overflow-y: ${({ scrollable }) => (scrollable ? "auto" : "")};
+  padding: 20px 0;
   
   ::-webkit-scrollbar {
-    width: 5px !important;
+    width: 3px !important;
   }
 
   ::-webkit-scrollbar-track {

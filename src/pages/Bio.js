@@ -1,10 +1,12 @@
 import React from "react";
-import { StyledContainer } from "../styled-components/containers";
+import { MainContent } from "../styled-components/containers";
 
 const Bio = () => {
   return (
     <div>
-      <StyledContainer maxWidth="1320px">Bio page</StyledContainer>
+      <MainContent>
+        <div className="styled-bio"></div>
+      </MainContent>
     </div>
   );
 };
