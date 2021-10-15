@@ -18,10 +18,10 @@ const Sidebar = ({ sidebarActive, setSidebarActive }) => {
         </StyledLogo>
         <ul className="navigation">
           <li>
-            <NavLink exact to="/" activeStyle={{ fontWeight: "500", color: "grey" }} onClick={closeSidebar}>Snapshot</NavLink>
+            <NavLink exact to="/" activeStyle={{ fontWeight: "600", color: "grey" }} onClick={closeSidebar}>Snapshot</NavLink>
           </li>
           <li>
-            <NavLink exact to="/toni" activeStyle={{ fontWeight: "500", color: "grey" }} onClick={closeSidebar}>Bio</NavLink>
+            <NavLink exact to="/toni" activeStyle={{ fontWeight: "600", color: "grey" }} onClick={closeSidebar}>Bio</NavLink>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/oluwatonic" target="_blank" rel="noreferrer">LinkedIn</a>

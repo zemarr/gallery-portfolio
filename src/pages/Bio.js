@@ -1,13 +1,16 @@
 import React from "react";
+import BioDetails from "../components/bioDetails";
 import { MainContent } from "../styled-components/containers";
 
 const Bio = () => {
   return (
-    <div>
+    <>
       <MainContent>
-        <div className="styled-bio"></div>
+        <div className="styled-bio">
+          <BioDetails />
+        </div>
       </MainContent>
-    </div>
+    </>
   );
 };
 

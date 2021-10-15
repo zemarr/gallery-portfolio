@@ -24,16 +24,6 @@ export const StyledSidebar = styled.div`
       transition: all .5s cubic-bezier(0.42, 0.01, 0, 1.04);
     }
 
-    /* ::after {
-        content: "";
-        width: 70px;
-        height: 30px;
-        background-color: red;
-        position: absolute;
-        right: -50px;
-        top: 0;
-    } */
-
     .logo-container {
         margin-left: 50px;
 
@@ -70,14 +60,12 @@ export const StyledSidebar = styled.div`
             @media screen and (max-width: 1024px) {
                 margin-left: 0;
             }
-            /* @media screen and (max-width: 768px) {
-                margin-left: 0;
-            } */
         }
 
         a {
             color: white;
             font-size: 14px;
+            font-weight: 600;
             text-decoration: none;
         }
     }
