@@ -1,21 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { StyledLogo } from "../styled-components/containers";
-import { StyledSidebar } from "../styled-components/styledSidebar";
+import { StyledMobileSidebar, StyledSidebar } from "../styled-components/styledSidebar";
 
-const Sidebar = () => {
+const Sidebar = ({ sidebarActive, setSidebarActive }) => {
+  console.log(sidebarActive);
   return (
     <>
-      <StyledSidebar>
-        <StyledLogo className="logo-container">
-          <span>PB2</span>
-        </StyledLogo>
+      <StyledSidebar isOpen={!sidebarActive}>
         <ul className="navigation">
           <li>
-            <NavLink to="/">Snapshot</NavLink>
+            <NavLink exact to="/" activeStyle={{ fontWeight: "500", color: "grey" }} className="">Snapshot</NavLink>
           </li>
           <li>
-            <NavLink to="/bio">Bio</NavLink>
+            <NavLink exact to="/toni" activeStyle={{ fontWeight: "500", color: "grey" }} className="">Bio</NavLink>
           </li>
         </ul>
       </StyledSidebar>

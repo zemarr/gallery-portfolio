@@ -1,13 +1,16 @@
 import React from "react";
 import Gallery from "../components/gallery";
-import { StyledContainer, StyledHome } from "../styled-components/containers";
+import { MainContent, StyledContainer, StyledHome } from "../styled-components/containers";
 
 const Home = () => {
   return (
     <>
-      <StyledHome className="styled-home">
-        <Gallery />
-      </StyledHome>
+
+      <MainContent scrollable>
+        <div className="styled-home">
+          <Gallery />
+        </div>
+      </MainContent>
     </>
   );
 };

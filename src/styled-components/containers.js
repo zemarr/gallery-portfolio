@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 export const StyledApp = styled.div`
   position: relative;
-  display: flex;
-  /* max-height: 100vh; */
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const StyledContainer = styled.div`
@@ -40,14 +43,25 @@ export const StyledRow = styled.div`
 export const StyledLogo = styled.div`
   font-size: 27px;
   width: fit-content;
+
+  h4 {
+    font-weight: 500;
+    font-size: 20px;
+  }
 `;
 
 export const StyledHome = styled.section`
-  height: 100vh;
+  height: calc(100vh - 80px);
+  width: 80%;
   overflow-y: auto;
-  /* scroll-behavior: smooth; */
-
-  /* @media screen and (max-width: 1200px) {
-    padding: 0 30px;
-  } */
 `;
+
+export const MainContent = styled.div`
+  height: calc(100vh - 80px);
+  max-width: 77%;
+  overflow-y: ${({scrollable}) => (scrollable ? "auto" : "")};
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+  }
+`
