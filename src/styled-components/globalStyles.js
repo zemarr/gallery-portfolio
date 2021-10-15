@@ -100,11 +100,11 @@ export const StyledHamburger = styled.div`
         }
 
         ::before {
-            transform: ${({ menuOpen }) => (menuOpen ? "" : "translateY(-9px)")};
+            transform: ${({ menuOpen }) => (menuOpen ? "" : "translateY(-7px)")};
             transform: ${({ menuOpen }) => (menuOpen ? "rotate(45deg)" : "")};
         }
             ::after {
-            transform: translateY(9px);
+            transform: translateY(7px);
             transform: ${({ menuOpen }) => (menuOpen ? "rotate(-45deg)" : "")};
         }
     

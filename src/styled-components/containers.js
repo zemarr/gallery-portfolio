@@ -68,6 +68,7 @@ export const MainContent = styled.div`
   max-width: 77%;
   overflow-y: ${({ scrollable }) => (scrollable ? "auto" : "")};
   padding: 20px 0;
+  scrollbar-width: thin;
   
   ::-webkit-scrollbar {
     width: 3px !important;
