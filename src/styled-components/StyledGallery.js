@@ -6,7 +6,6 @@ export const StyledGallery = styled.div`
     column-width: 43%;
     -moz-column-width: 43%;
     padding: 0 12px;
-    padding-top: 40px;
 
     @media screen and (max-width: 768px) {
         padding: 0;

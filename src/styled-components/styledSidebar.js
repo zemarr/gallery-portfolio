@@ -59,11 +59,11 @@ export const StyledSidebar = styled.div`
         list-style: none;
 
         li {
-            margin-left: 30px;
+            padding-left: 30px;
             margin-bottom: 1rem;
 
             @media screen and (max-width: 1024px) {
-                margin-left: 0;
+                padding-left: 0;
             }
         }
 
@@ -72,6 +72,7 @@ export const StyledSidebar = styled.div`
             font-size: 15px;
             font-weight: 400;
             text-decoration: none;
+            width: 100%;
         }
     }
 `

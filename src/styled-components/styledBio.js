@@ -19,7 +19,7 @@ export const StyledBio = styled.section`
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding-top: 30px;
+        /* padding-top: 30px; */
         background-color: black;
         transition: opacity 1.4s cubic-bezier(0.42, 0.01, 0, 1.04),
             visibility 0.4s cubic-bezier(0.42, 0.01, 0, 1.04),
@@ -43,12 +43,14 @@ export const StyledBio = styled.section`
         line-height: 0;
         box-sizing: border-box;
         padding: 20px 0 20px;
+        padding-top: 0;
         margin: 0 auto;
         position: relative;
     }
 
     .bio-content {
         padding: 40px 20px 20px 0;
+        padding-top: 0;
         font-size: 18px;
         font-family: var(--heading-font);
         overflow-y: scroll;
