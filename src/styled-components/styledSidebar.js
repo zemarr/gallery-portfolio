@@ -9,6 +9,7 @@ export const StyledSidebar = styled.div`
     height: 100vh;
     padding-top: 50px;
     padding-bottom: 50px;
+    z-index: 999;
     /* border: solid 1px grey; */
 
     @media screen and (max-width: 768px) {
@@ -69,7 +70,7 @@ export const StyledSidebar = styled.div`
         a {
             color: white;
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 400;
             text-decoration: none;
         }
     }

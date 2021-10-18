@@ -55,6 +55,15 @@ export const StyledBio = styled.section`
         height: calc(100vh - 20px);
         scrollbar-width: thin;
 
+        h2 {
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 17px;
+            font-weight: 300;
+        }
+
         
         ::-webkit-scrollbar {
             width: 3px !important;
