@@ -85,7 +85,7 @@ const Gallery = () => {
               className="pics"
               key={index}
               onClick={() => getImg(item.imgSrc)}>
-              <img src={item.imgSrc} alt="" style={{ width: "100%" }} />
+              <img src={item.imgSrc} alt="" style={{ width: "320px", height: "320px" }} />
             </div>
           </>
         ))}

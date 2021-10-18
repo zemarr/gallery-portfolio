@@ -43,11 +43,11 @@ function App() {
           </StyledHeader>
 
           <div className="d-flex">
-            <Sidebar sidebarActive={sidebarActive} setSidebarActive={setSidebarActive} />
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/toni" exact component={Bio} />
             </Switch>
+            <Sidebar sidebarActive={sidebarActive} setSidebarActive={setSidebarActive} />
           </div>
         </StyledApp>
       </Router>

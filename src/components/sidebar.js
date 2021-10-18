@@ -20,7 +20,7 @@ const Sidebar = ({ sidebarActive, setSidebarActive }) => {
         </StyledLogo>
         <ul className="navigation">
           <li>
-            <NavLink exact to="/" activeStyle={{ fontWeight: "600", color: "grey" }} onClick={closeSidebar}>Snapshot</NavLink>
+            <NavLink exact to="/" activeStyle={{ fontWeight: "600", color: "grey" }} onClick={closeSidebar}>Recent Collections</NavLink>
           </li>
           <li>
             <NavLink exact to="/toni" activeStyle={{ fontWeight: "600", color: "grey" }} onClick={closeSidebar}>Bio</NavLink>

@@ -68,6 +68,15 @@ export const StyledBio = styled.section`
         }
 
         
+        :hover {
+            ::-webkit-scrollbar-thumb {
+            transition: 1.4s cubic-bezier(0.42, 0.01, 0, 1.04);
+            background-color: var(--font-color) !important;
+            visibility: visible!important;
+            /* border-radius: 50px; */
+            }
+        }
+
         ::-webkit-scrollbar {
             width: 3px !important;
         }
@@ -78,7 +87,9 @@ export const StyledBio = styled.section`
         }
 
         ::-webkit-scrollbar-thumb {
+            transition: 1.4s cubic-bezier(0.42, 0.01, 0, 1.04);
             background-color: var(--font-color) !important;
+            visibility: hidden!important;
             /* border-radius: 50px; */
         }
 
