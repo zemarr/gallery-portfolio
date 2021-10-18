@@ -87,6 +87,7 @@ export const MainContent = styled.div`
   @media screen and (max-width: 768px) {
     max-width: 100%;
     padding-bottom: 80px;
+    margin-top: 0;
   }
 
   .styled-bio {
