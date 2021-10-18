@@ -1,35 +1,52 @@
 import Home from "./pages/Home";
-import GlobalStyle, { StyledHeader } from "./styled-components/globalStyles";
-import { MenuSharp } from "@material-ui/icons";
+import GlobalStyle, { StyledHamburger, StyledHeader } from "./styled-components/globalStyles";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Bio from "./pages/Bio";
 import Sidebar from "./components/sidebar";
 import {
-  StyledApp,
-  StyledContainer,
-  StyledLogo,
+  StyledApp, StyledLogo,
 } from "./styled-components/containers";
+import { useState } from "react";
+import { useEffect } from "react";
+import ReactCSSTransitionGroup from 'react-transition-group';
 
 function App() {
+  const [sidebarActive, setSidebarActive] = useState(false);
+
+  const handleSidebarActive = (e) => {
+    if (e.type === "click") {
+      setSidebarActive(!sidebarActive)
+    }
+  }
+
+  // useEffect(() => {
+  //   // "effect"
+
+  //   return () => {
+  //     // "cleanup"
+  //   }
+  // }, ["input"])
   return (
     <div className="App">
       <GlobalStyle />
-      {/* <StyledHeader className="styled-header">
-        <StyledLogo className="logo-container">
-          <span>PB2</span>
-        </StyledLogo>
-      </StyledHeader> */}
-
       <Router>
-        <StyledApp className="styled-app">
-          <Sidebar />
+        <StyledApp className="styled-app container-fluid">
+          <StyledHeader>
+            <StyledLogo to="/" className="logo-container">
+              <h4>Toni<span style={{ fontSize: "30px", color: "brown" }}>.</span></h4>
+            </StyledLogo>
+            <StyledHamburger onClick={handleSidebarActive} menuOpen={sidebarActive}>
+              <div className="menu-btn_hamburger"></div>
+            </StyledHamburger>
+          </StyledHeader>
 
-          <StyledContainer maxWidth="1250px" className="styled-container">
+          <div className="d-flex">
+            <Sidebar sidebarActive={sidebarActive} setSidebarActive={setSidebarActive} />
             <Switch>
               <Route path="/" exact component={Home} />
-              <Route path="/bio" exact component={Bio} />
+              <Route path="/toni" exact component={Bio} />
             </Switch>
-          </StyledContainer>
+          </div>
         </StyledApp>
       </Router>
     </div>

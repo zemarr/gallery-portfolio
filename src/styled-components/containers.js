@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledApp = styled.div`
   position: relative;
-  display: flex;
-  max-height: 100vh;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const StyledContainer = styled.div`
@@ -37,18 +41,61 @@ export const StyledRow = styled.div`
   justify-content: ${(props) => props.justifyContent};
 `;
 
-export const StyledLogo = styled.div`
+export const StyledLogo = styled(Link)`
   font-size: 27px;
+  color: var(--font-color);
+  text-decoration: none!important;
   width: fit-content;
+
+  :hover {
+    color: inherit;
+  }
+
+  h4 {
+    font-weight: 900;
+    font-size: 20px !important;
+  }
 `;
 
 export const StyledHome = styled.section`
+  height: calc(100vh - 80px);
+  width: 80%;
   overflow-y: auto;
-  scroll-behavior: smooth;
-  /* padding: 0 50px; */
-  height: inherit;
-
-  @media screen and (max-width: 1200px) {
-    padding: 0 30px;
-  }
 `;
+
+export const MainContent = styled.div`
+  height: 100vh;
+  max-width: 77%;
+  overflow-y: ${({ scrollable }) => (scrollable ? "auto" : "")};
+  padding: 20px 0;
+  scrollbar-width: thin;
+  
+  ::-webkit-scrollbar {
+    width: 3px !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 50px !important;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--font-color) !important;
+    /* border-radius: 50px; */
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    padding-bottom: 80px;
+  }
+
+  .styled-bio {
+    @media screen and (max-width: 768px) {
+      height: inherit;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      scrollbar-width: thin;
+      padding-bottom: 100px;
+    }
+  }
+`
