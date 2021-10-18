@@ -22,7 +22,7 @@ export const StyledGallery = styled.div`
         margin-bottom: 12px;
 
         :hover {
-            filter: opacity(.8);
+            filter: opacity(.9);
         }
 
         @media screen and (max-width: 425px) {
