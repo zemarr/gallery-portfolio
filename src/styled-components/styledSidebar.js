@@ -69,7 +69,7 @@ export const StyledSidebar = styled.div`
 
         a {
             color: white;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 400;
             text-decoration: none;
         }

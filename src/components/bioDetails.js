@@ -13,7 +13,7 @@ const BioDetails = () => {
                 </div>
                 <div className="col-lg-8">
                     <div className="bio-content">
-                        <h3 className="mb-4">Bio</h3>
+                        <h4 className="mb-4">Bio</h4>
                         <p>
                             Oluwatoni “Toni” Campbell is a General Partner of Kinfolk Venture Capital, an Africa-focused fund investing in pre-seed and seed companies led by the continent's next generation of technology entrepreneurs. The firm, headquartered in Lagos, Nigeria, invests in companies and teams that are committed to transforming African markets, solving the continent’s most pertinent issues, and most importantly shifting the global perception of Africa and the black identity.
                         </p>

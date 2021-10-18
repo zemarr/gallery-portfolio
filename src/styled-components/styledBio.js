@@ -55,8 +55,9 @@ export const StyledBio = styled.section`
         height: calc(100vh - 20px);
         scrollbar-width: thin;
 
-        h3 {
-            font-weight: 500;
+        h4 {
+            font-weight: 600;
+            /* font-size: 20px !important; */
         }
 
         p {
