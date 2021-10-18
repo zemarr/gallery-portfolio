@@ -27,13 +27,18 @@ export const StyledBio = styled.section`
         visibility: visible;
         opacity: 1;
         overflow: hidden;
+
+        @media screen and (max-width: 425px) {
+            height: max-content;
+            
+        }
     }
 
     .bio-portrait img {
-        width: auto;
+        width: 100%;
         max-width: 100%;
         height: auto;
-        max-height: 80%;
+        /* max-height: 80%; */
         display: block;
         line-height: 0;
         box-sizing: border-box;
@@ -43,7 +48,7 @@ export const StyledBio = styled.section`
     }
 
     .bio-content {
-        padding: 0 20px 20px 0;
+        padding: 40px 20px 20px 0;
         font-size: 18px;
         font-family: var(--heading-font);
         overflow-y: scroll;
@@ -63,6 +68,16 @@ export const StyledBio = styled.section`
         ::-webkit-scrollbar-thumb {
             background-color: var(--font-color) !important;
             /* border-radius: 50px; */
+        }
+
+        @media screen and (max-width: 768px) {
+            overflow-y: hidden;
+            height: fit-content;
+            padding-right: 0;
+        }
+        @media screen and (max-width: 425px) {
+            /* padding-top: 0; */
+
         }
     }
 

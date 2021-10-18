@@ -8,6 +8,7 @@ import {
 } from "./styled-components/containers";
 import { useState } from "react";
 import { useEffect } from "react";
+import ReactCSSTransitionGroup from 'react-transition-group';
 
 function App() {
   const [sidebarActive, setSidebarActive] = useState(false);
@@ -18,13 +19,13 @@ function App() {
     }
   }
 
-  useEffect(() => {
-    // "effect"
+  // useEffect(() => {
+  //   // "effect"
 
-    return () => {
-      // "cleanup"
-    }
-  }, ["input"])
+  //   return () => {
+  //     // "cleanup"
+  //   }
+  // }, ["input"])
   return (
     <div className="App">
       <GlobalStyle />
@@ -32,7 +33,7 @@ function App() {
         <StyledApp className="styled-app container-fluid">
           <StyledHeader>
             <StyledLogo to="/" className="logo-container">
-              <h4>Toni<span style={{fontSize: "30px", color: "brown"}}>.</span></h4>
+              <h4>Toni<span style={{ fontSize: "30px", color: "brown" }}>.</span></h4>
             </StyledLogo>
             <StyledHamburger onClick={handleSidebarActive} menuOpen={sidebarActive}>
               <div className="menu-btn_hamburger"></div>

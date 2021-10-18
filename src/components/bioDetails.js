@@ -8,7 +8,7 @@ const BioDetails = () => {
             <div className="row">
                 <div className="col-lg-4">
                     <div className="bio-portrait">
-                        <img src={bioImg} alt="" style={{ width: "100%", transform: "scale(1.5)" }} />
+                        <img src={bioImg} alt="" />
                     </div>
                 </div>
                 <div className="col-lg-8">
