@@ -91,6 +91,22 @@ export const StyledBio = styled.section`
             /* padding-top: 0; */
 
         }
+
+        .socials {
+            display: flex;
+            list-style: none;
+            margin: 30px 0;
+            padding: 0;
+
+            li {
+                padding-right: 10px;
+
+                a {
+                    font-size: 15px;
+                    color: var(--font-color)
+                }
+            }
+        }
     }
 
 `

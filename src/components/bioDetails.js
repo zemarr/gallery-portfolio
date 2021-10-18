@@ -29,6 +29,17 @@ const BioDetails = () => {
                         <p>
                             When Toni is not working diligently to open doors on behalf of the founders he is privileged to work with, one is  likely to find him either at an art gallery soaking up the latest trends in contemporary African art or on a soccer pitch somewhere hoping to one day fulfill his long-held childhood dream of trying out for the Nigerian National Football team.
                         </p>
+                        <ul className="socials">
+                            <li>
+                                <a href="mailto:toni@kinfolk.vc" target="_blank" rel="noreferrer">Email</a>
+                            </li> | &nbsp;
+                            <li>
+                                <a href="https://twitter.com/oluwatonic" target="_blank" rel="noreferrer">Twitter</a>
+                            </li> | &nbsp;
+                            <li>
+                                <a href="https://www.linkedin.com/in/oluwatonic" target="_blank" rel="noreferrer">LinkedIn</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
