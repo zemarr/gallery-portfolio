@@ -33,7 +33,7 @@ function App() {
         <StyledApp className="styled-app container-fluid">
           <StyledHeader>
             <StyledLogo to="/" className="logo-container">
-              <h4>Toni<span style={{ fontSize: "30px", color: "brown" }}>.</span></h4>
+              <h4>Campbell<span style={{ fontSize: "30px", color: "brown" }}>.</span>ng</h4>
             </StyledLogo>
             <StyledHamburger onClick={handleSidebarActive} menuOpen={sidebarActive}>
               <div className="menu-btn_hamburger"></div>
