@@ -7,8 +7,8 @@ import {
   StyledApp, StyledLogo,
 } from "./styled-components/containers";
 import { useState } from "react";
-import { useEffect } from "react";
-import ReactCSSTransitionGroup from 'react-transition-group';
+// import { useEffect } from "react";
+// import ReactCSSTransitionGroup from 'react-transition-group';
 
 function App() {
   const [sidebarActive, setSidebarActive] = useState(false);
