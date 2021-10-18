@@ -15,13 +15,19 @@ export const StyledGallery = styled.div`
     row-gap: 10px;
     padding-bottom: 50px;
 
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(auto-fill,minmax(200px, 200px));
+        padding: 0;
+    }
+
     @media screen and (max-width: 768px) {
         padding: 0;
     }
 
-    @media screen and (max-width: 425px) {
-        column-gap: 6px;
-        row-gap: 6px;
+    @media screen and (max-width: 443px) {
+        /* column-gap: 6px;
+        row-gap: 6px; */
+        grid-template-columns: repeat(auto-fill,minmax(150px, 150px));
     }
 
     .pics {
@@ -36,8 +42,19 @@ export const StyledGallery = styled.div`
         }
 
         img {
+            width: 320px;
+            height: 320px;
             object-fit: cover;
             object-position: center;
+
+            @media screen and (max-width: 1024px) {
+                width: 200px;
+                height: 200px;
+            }
+            @media screen and (max-width: 443px) {
+                width: 150px;
+                height: 150px;
+            }
         }
 
         @media screen and (max-width: 425px) {
