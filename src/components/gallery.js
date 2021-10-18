@@ -63,8 +63,8 @@ const Gallery = () => {
 
   return (
     <>
-      <StyledModal className={modal ? "campmodal open" : "campmodal"}>
-        <div onClick={() => setModal(false)}>
+      <StyledModal className={modal ? "campmodal open" : "campmodal"} onClick={() => setModal(false)}>
+        <div className="close-modal" onClick={() => setModal(false)}>
           <Close
             style={{
               color: "white",
