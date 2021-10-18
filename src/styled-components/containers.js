@@ -52,7 +52,7 @@ export const StyledLogo = styled(Link)`
   }
 
   h4 {
-    font-weight: 900;
+    font-weight: 600;
     font-size: 20px !important;
   }
 `;

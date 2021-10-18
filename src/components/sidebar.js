@@ -14,7 +14,9 @@ const Sidebar = ({ sidebarActive, setSidebarActive }) => {
     <>
       <StyledSidebar isOpen={!sidebarActive}>
         <StyledLogo to="/" className="sidebar-logo-container">
-          <h4>Campbell<span style={{fontSize: "30px", color: "brown"}}>.</span>ng</h4>
+          <h4>Toni Campbell
+            {/* <span style={{fontSize: "30px", color: "brown"}}>.</span>ng */}
+          </h4>
         </StyledLogo>
         <ul className="navigation">
           <li>
