@@ -35,7 +35,7 @@ export const StyledGallery = styled.div`
     max-width: 100%;
     height: 300px;
     max-height: 100%;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     z-index: 50;
 
     @media screen and (max-width: 1024px) {
@@ -65,7 +65,7 @@ export const StyledGallery = styled.div`
     }
 
     :hover {
-      /* border: solid 1px #e9ecef5e; */
+      border-radius: 36px;
 
       img {
         transition: all 350ms cubic-bezier(0.42, 0.01, 0, 1.04);
