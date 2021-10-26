@@ -86,5 +86,16 @@ export const MainContent = styled.div`
 
   @media screen and (max-width: 768px) {
     max-width: 100%;
+    padding-bottom: 80px;
+  }
+
+  .styled-bio {
+    @media screen and (max-width: 768px) {
+      height: inherit;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      scrollbar-width: thin;
+      padding-bottom: 100px;
+    }
   }
 `

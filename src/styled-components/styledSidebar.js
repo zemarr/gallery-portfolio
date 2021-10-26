@@ -41,6 +41,10 @@ export const StyledSidebar = styled.div`
         padding: 0 50px;
         margin-bottom: 50px;
 
+        @media screen and (max-width: 1024px) {
+            padding-left: 20px;
+        }
+
         @media screen and (max-width: 768px) {
             display: none;
             visibility: hidden;
