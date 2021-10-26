@@ -13,13 +13,13 @@ export const StyledBio = styled.section`
 
     .bio-portrait {
         width: 100%;
-        height: 100vh;
+        height: max-content;
+        margin: 20px 0 50px;
         left: 0%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        /* padding-top: 30px; */
         background-color: black;
         transition: opacity 1.4s cubic-bezier(0.42, 0.01, 0, 1.04),
             visibility 0.4s cubic-bezier(0.42, 0.01, 0, 1.04),
@@ -27,6 +27,7 @@ export const StyledBio = styled.section`
         visibility: visible;
         opacity: 1;
         overflow: hidden;
+        border-radius: 25px;
 
         @media screen and (max-width: 425px) {
             height: max-content;
@@ -38,11 +39,9 @@ export const StyledBio = styled.section`
         width: 100%;
         max-width: 100%;
         height: auto;
-        /* max-height: 80%; */
         display: block;
         line-height: 0;
         box-sizing: border-box;
-        padding: 20px 0 20px;
         padding-top: 0;
         margin: 0 auto;
         position: relative;

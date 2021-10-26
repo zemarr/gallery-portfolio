@@ -82,18 +82,18 @@ export const StyledHamburger = styled.div`
     }
 
     .menu-btn_hamburger {
-        width: 28px;
+        width: 25px;
         height: 2px;
         background-color: white;
         box-shadow: 0 2px rgba(255,101,47,.2);
         transition: all .5s cubic-bezier(0.42, 0.01, 0, 1.04);
-        opacity: ${({ menuOpen }) => (menuOpen ? "0" : "1")}
+        opacity: ${({ menuOpen }) => (menuOpen ? "0" : "1")};
     }
 
     ::before, ::after {
             content: "";
             position: absolute;
-            width: 28px;
+            width: 25px;
             height: 2px;
             background-color: white;
             box-shadow: 0 2px rgba(255,101,47,.2);

@@ -8,6 +8,15 @@ export const StyledApp = styled.div`
     display: flex;
     flex-direction: column;
   }
+
+  .d-flex {
+    width: 100%;
+    justify-content: space-between;
+
+    @media screen and (max-width: 425px) {
+      justify-content: center;
+    }
+  }
 `;
 
 export const StyledContainer = styled.div`
@@ -44,7 +53,7 @@ export const StyledRow = styled.div`
 export const StyledLogo = styled(Link)`
   font-size: 27px;
   color: var(--font-color);
-  text-decoration: none!important;
+  text-decoration: none !important;
   width: fit-content;
 
   :hover {
@@ -66,6 +75,7 @@ export const StyledHome = styled.section`
 
 export const MainContent = styled.div`
   height: 100vh;
+  min-width: 77%;
   max-width: 77%;
   overflow-y: ${({ scrollable }) => (scrollable ? "auto" : "")};
   margin-top: 50px;
@@ -75,7 +85,7 @@ export const MainContent = styled.div`
     ::-webkit-scrollbar-thumb {
       transition: 1.4s cubic-bezier(0.42, 0.01, 0, 1.04);
       background-color: var(--font-color) !important;
-      visibility: visible!important;
+      visibility: visible !important;
       /* border-radius: 50px; */
     }
   }
@@ -92,11 +102,12 @@ export const MainContent = styled.div`
   ::-webkit-scrollbar-thumb {
     transition: 1.4s cubic-bezier(0.42, 0.01, 0, 1.04);
     background-color: var(--font-color) !important;
-    visibility: hidden!important;
+    visibility: hidden !important;
     /* border-radius: 50px; */
   }
 
   @media screen and (max-width: 768px) {
+    min-width: 100%;
     max-width: 100%;
     padding-bottom: 80px;
     margin-top: 0;
@@ -111,4 +122,4 @@ export const MainContent = styled.div`
       padding-bottom: 100px;
     }
   }
-`
+`;
