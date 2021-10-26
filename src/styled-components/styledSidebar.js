@@ -9,6 +9,7 @@ export const StyledSidebar = styled.div`
     height: 100vh;
     padding-top: 50px;
     padding-bottom: 50px;
+    z-index: 999;
     /* border: solid 1px grey; */
 
     @media screen and (max-width: 768px) {
@@ -58,19 +59,20 @@ export const StyledSidebar = styled.div`
         list-style: none;
 
         li {
-            margin-left: 30px;
+            padding-left: 30px;
             margin-bottom: 1rem;
 
             @media screen and (max-width: 1024px) {
-                margin-left: 0;
+                padding-left: 0;
             }
         }
 
         a {
             color: white;
-            font-size: 14px;
-            font-weight: 600;
+            font-size: 15px;
+            font-weight: 400;
             text-decoration: none;
+            width: 100%;
         }
     }
 `

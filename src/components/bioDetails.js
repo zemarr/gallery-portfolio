@@ -13,6 +13,7 @@ const BioDetails = () => {
                 </div>
                 <div className="col-lg-8">
                     <div className="bio-content">
+                        <h4 className="mb-4">Bio</h4>
                         <p>
                             Oluwatoni “Toni” Campbell is a General Partner of Kinfolk Venture Capital, an Africa-focused fund investing in pre-seed and seed companies led by the continent's next generation of technology entrepreneurs. The firm, headquartered in Lagos, Nigeria, invests in companies and teams that are committed to transforming African markets, solving the continent’s most pertinent issues, and most importantly shifting the global perception of Africa and the black identity.
                         </p>
@@ -28,6 +29,17 @@ const BioDetails = () => {
                         <p>
                             When Toni is not working diligently to open doors on behalf of the founders he is privileged to work with, one is  likely to find him either at an art gallery soaking up the latest trends in contemporary African art or on a soccer pitch somewhere hoping to one day fulfill his long-held childhood dream of trying out for the Nigerian National Football team.
                         </p>
+                        <ul className="socials">
+                            <li>
+                                <a href="mailto:toni@kinfolk.vc" target="_blank" rel="noreferrer">Email</a>
+                            </li> | &nbsp;
+                            <li>
+                                <a href="https://twitter.com/oluwatonic" target="_blank" rel="noreferrer">Twitter</a>
+                            </li> | &nbsp;
+                            <li>
+                                <a href="https://www.linkedin.com/in/oluwatonic" target="_blank" rel="noreferrer">LinkedIn</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

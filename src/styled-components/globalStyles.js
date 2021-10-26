@@ -49,6 +49,7 @@ export const StyledHeader = styled.header`
     top: -70px;
     opacity: 0;
     visibility: hidden;
+    z-index: 1000;
 
     /* transform: translateY(-70px); */
 

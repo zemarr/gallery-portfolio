@@ -7,8 +7,8 @@ import {
   StyledApp, StyledLogo,
 } from "./styled-components/containers";
 import { useState } from "react";
-import { useEffect } from "react";
-import ReactCSSTransitionGroup from 'react-transition-group';
+// import { useEffect } from "react";
+// import ReactCSSTransitionGroup from 'react-transition-group';
 
 function App() {
   const [sidebarActive, setSidebarActive] = useState(false);
@@ -33,7 +33,9 @@ function App() {
         <StyledApp className="styled-app container-fluid">
           <StyledHeader>
             <StyledLogo to="/" className="logo-container">
-              <h4>Toni<span style={{ fontSize: "30px", color: "brown" }}>.</span></h4>
+              <h4>Campbell
+                {/* <span style={{ fontSize: "30px", color: "brown" }}>.</span>ng */}
+              </h4>
             </StyledLogo>
             <StyledHamburger onClick={handleSidebarActive} menuOpen={sidebarActive}>
               <div className="menu-btn_hamburger"></div>
@@ -41,11 +43,11 @@ function App() {
           </StyledHeader>
 
           <div className="d-flex">
-            <Sidebar sidebarActive={sidebarActive} setSidebarActive={setSidebarActive} />
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/toni" exact component={Bio} />
             </Switch>
+            <Sidebar sidebarActive={sidebarActive} setSidebarActive={setSidebarActive} />
           </div>
         </StyledApp>
       </Router>

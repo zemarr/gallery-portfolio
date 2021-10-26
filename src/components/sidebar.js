@@ -14,11 +14,13 @@ const Sidebar = ({ sidebarActive, setSidebarActive }) => {
     <>
       <StyledSidebar isOpen={!sidebarActive}>
         <StyledLogo to="/" className="sidebar-logo-container">
-          <h4>Toni<span style={{fontSize: "30px", color: "brown"}}>.</span></h4>
+          <h4>Toni Campbell
+            {/* <span style={{fontSize: "30px", color: "brown"}}>.</span>ng */}
+          </h4>
         </StyledLogo>
         <ul className="navigation">
           <li>
-            <NavLink exact to="/" activeStyle={{ fontWeight: "600", color: "grey" }} onClick={closeSidebar}>Snapshot</NavLink>
+            <NavLink exact to="/" activeStyle={{ fontWeight: "600", color: "grey" }} onClick={closeSidebar}>Recent Collections</NavLink>
           </li>
           <li>
             <NavLink exact to="/toni" activeStyle={{ fontWeight: "600", color: "grey" }} onClick={closeSidebar}>Bio</NavLink>

@@ -8,7 +8,7 @@ import img6 from "../img/IMG_2500.JPG";
 import img7 from "../img/IMG_1023-opt.jpg";
 import img8 from "../img/IMG_2038-opt.jpg";
 import img9 from "../img/IMG_3866.JPG";
-import { StyledGallery } from "../styled-components/styledGallery";
+import { StyledGallery } from "../styled-components/StyledGallery";
 import { useState } from "react";
 import { StyledModal } from "../styled-components/modal";
 import { Close } from "@material-ui/icons";
@@ -63,8 +63,8 @@ const Gallery = () => {
 
   return (
     <>
-      <StyledModal className={modal ? "campmodal open" : "campmodal"}>
-        <div onClick={() => setModal(false)}>
+      <StyledModal className={modal ? "campmodal open" : "campmodal"} onClick={() => setModal(false)}>
+        <div className="close-modal" onClick={() => setModal(false)}>
           <Close
             style={{
               color: "white",
@@ -85,7 +85,7 @@ const Gallery = () => {
               className="pics"
               key={index}
               onClick={() => getImg(item.imgSrc)}>
-              <img src={item.imgSrc} alt="" style={{ width: "100%" }} />
+              <img src={item.imgSrc} alt="" />
             </div>
           </>
         ))}

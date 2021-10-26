@@ -52,8 +52,9 @@ export const StyledLogo = styled(Link)`
   }
 
   h4 {
-    font-weight: 900;
+    font-weight: 600;
     font-size: 20px !important;
+    margin: 0;
   }
 `;
 
@@ -67,9 +68,18 @@ export const MainContent = styled.div`
   height: 100vh;
   max-width: 77%;
   overflow-y: ${({ scrollable }) => (scrollable ? "auto" : "")};
-  padding: 20px 0;
+  margin-top: 50px;
   scrollbar-width: thin;
-  
+
+  :hover {
+    ::-webkit-scrollbar-thumb {
+      transition: 1.4s cubic-bezier(0.42, 0.01, 0, 1.04);
+      background-color: var(--font-color) !important;
+      visibility: visible!important;
+      /* border-radius: 50px; */
+    }
+  }
+
   ::-webkit-scrollbar {
     width: 3px !important;
   }
@@ -80,13 +90,16 @@ export const MainContent = styled.div`
   }
 
   ::-webkit-scrollbar-thumb {
+    transition: 1.4s cubic-bezier(0.42, 0.01, 0, 1.04);
     background-color: var(--font-color) !important;
+    visibility: hidden!important;
     /* border-radius: 50px; */
   }
 
   @media screen and (max-width: 768px) {
     max-width: 100%;
     padding-bottom: 80px;
+    margin-top: 0;
   }
 
   .styled-bio {
