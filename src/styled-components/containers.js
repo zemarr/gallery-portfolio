@@ -74,7 +74,7 @@ export const StyledHome = styled.section`
 `;
 
 export const MainContent = styled.div`
-  height: 100vh;
+  height: calc(100vh - 50px);
   min-width: 77%;
   max-width: 77%;
   overflow-y: ${({ scrollable }) => (scrollable ? "auto" : "")};
@@ -84,6 +84,7 @@ export const MainContent = styled.div`
   :hover {
     ::-webkit-scrollbar-thumb {
       transition: 1.4s cubic-bezier(0.42, 0.01, 0, 1.04);
+      border-radius: 50px !important;
       background-color: var(--font-color) !important;
       visibility: visible !important;
       /* border-radius: 50px; */
@@ -95,11 +96,13 @@ export const MainContent = styled.div`
   }
 
   ::-webkit-scrollbar-track {
+    border-radius: 50px;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1) !important;
     border-radius: 50px !important;
   }
 
   ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
     transition: 1.4s cubic-bezier(0.42, 0.01, 0, 1.04);
     background-color: var(--font-color) !important;
     visibility: hidden !important;

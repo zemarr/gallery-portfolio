@@ -27,7 +27,7 @@ export const StyledBio = styled.section`
         visibility: visible;
         opacity: 1;
         overflow: hidden;
-        border-radius: 25px;
+        border-radius: 10px;
 
         @media screen and (max-width: 425px) {
             height: max-content;

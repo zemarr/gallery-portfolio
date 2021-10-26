@@ -68,8 +68,8 @@ const Gallery = () => {
           <Close
             style={{
               color: "white",
-              height: "40px",
-              width: "40px",
+              height: "25px",
+              width: "25px",
               position: "absolute",
               top: "20px",
               right: "20px",
@@ -79,11 +79,11 @@ const Gallery = () => {
         <img src={tempImgSrc} alt="" />
       </StyledModal>
       <StyledGallery className="gallery-container">
-        {data.map((item, index) => (
+        {data.map((item) => (
           <>
             <div
               className="pics"
-              key={index}
+              key={item.id}
               onClick={() => getImg(item.imgSrc)}>
               <img src={item.imgSrc} alt="" />
             </div>
