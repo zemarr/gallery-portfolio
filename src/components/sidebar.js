@@ -23,7 +23,7 @@ const Sidebar = ({ sidebarActive, setSidebarActive }) => {
             <NavLink exact to="/" activeStyle={{ fontWeight: "600", color: "grey" }} onClick={closeSidebar}>Recent Collections</NavLink>
           </li>
           <li>
-            <NavLink exact to="/toni" activeStyle={{ fontWeight: "600", color: "grey" }} onClick={closeSidebar}>Bio</NavLink>
+            <NavLink exact to="/bio" activeStyle={{ fontWeight: "600", color: "grey" }} onClick={closeSidebar}>Bio</NavLink>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/oluwatonic" target="_blank" rel="noreferrer">LinkedIn</a>

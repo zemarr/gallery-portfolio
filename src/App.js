@@ -45,7 +45,7 @@ function App() {
           <div className="d-flex">
             <Switch>
               <Route path="/" exact component={Home} />
-              <Route path="/toni" exact component={Bio} />
+              <Route path="/bio" exact component={Bio} />
             </Switch>
             <Sidebar sidebarActive={sidebarActive} setSidebarActive={setSidebarActive} />
           </div>
