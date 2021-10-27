@@ -35,7 +35,7 @@ const Sidebar = ({ sidebarActive, setSidebarActive }) => {
             <a href="https://instagram.com/oluwatonic" target="_blank" rel="noreferrer">Instagram</a>
           </li>
           <li>
-            <a href="mailto:toni@kinfolk.vc" target="_blank" rel="noreferrer">Email</a>
+            <a href="mailto:info@campbell.ng" target="_blank" rel="noreferrer">Email</a>
           </li>
         </ul>
       </StyledSidebar>
